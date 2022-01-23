@@ -1159,7 +1159,7 @@ contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {
 pragma solidity >=0.7.0 <0.9.0;
 
 
-contract SketchyApeComicClub is ERC721, Ownable {
+contract CosmicEnergyGas is ERC721, Ownable {
   using Strings for uint256;
   using Counters for Counters.Counter;
 
@@ -1177,7 +1177,7 @@ contract SketchyApeComicClub is ERC721, Ownable {
 
   address public sabcAddress;
 
-  constructor() ERC721("Bored Asteroid Apocalypse Club Exodus", "BAACE") {
+  constructor() ERC721("Bored Asteroid Apocalypse Club Cosmic Energy Gas", "BAACCEG") {
     setHiddenMetadataUri("ipfs://EnterIPSFTokenIDHere/hidden.json");
     setsabcAddress(EnterBAACGenesisContractAddresshHere);
   }
@@ -1196,7 +1196,7 @@ contract SketchyApeComicClub is ERC721, Ownable {
     require(!paused, "The contract is paused!");
     IERC721 token = IERC721(sabcAddress);
     uint256 ownedAmount = token.balanceOf(msg.sender);
-    require(ownedAmount >= 1, "You don't own SABC NFTs");
+    require(ownedAmount >= 1, "You don't own BAAC Genesis NFTs");
 
     _mintLoop(msg.sender, _mintAmount);
   }
