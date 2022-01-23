@@ -1177,7 +1177,7 @@ contract CosmicEnergyGas is ERC721, Ownable {
 
   address public baacgAddress;
 
-  constructor() ERC721("Bored Asteroid Apocalypse Club Cosmic Energy Gas", "BAACCEG") {
+  constructor() ERC721("BAAC Cosmic Energy Gas", "BAACCEG") {
     setHiddenMetadataUri("ipfs://EnterIPSFTokenIDHere/hidden.json");
     setbaacgAddress(EnterBAACGenesisContractAddresshHere);
   }
